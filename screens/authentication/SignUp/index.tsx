@@ -1,9 +1,8 @@
-import Navigation from "./Navigation";
-
 import React from "react";
+import SignUpPage from "./SignUpPage";
 
 const index = () => {
-  return Navigation;
+  return <SignUpPage />;
 };
 
 export default index;
