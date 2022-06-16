@@ -14,15 +14,15 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
 import { ColorSchemeName, Pressable } from "react-native";
 
-import Colors from "../constants/Colors";
+import Colors from "../theme/Colors";
 import useColorScheme from "../hooks/useColorScheme";
-import AuthenticationHelp from "../screens/authentication/AuthenticationHelp";
-import SignIn from "../screens/authentication/SignIn";
-import SignUp from "../screens/authentication/SignUp";
+import AuthenticationHelp from "../screens/Authentication/AuthenticationHelp";
+import SignIn from "../screens/Authentication/SignIn";
+import SignUp from "../screens/Authentication/SignUp";
 import ModalScreen from "../screens/ModalScreen";
 import NotFoundScreen from "../screens/NotFoundScreen";
-import TabOneScreen from "../screens/TabOneScreen";
-import TabTwoScreen from "../screens/TabTwoScreen";
+import TabOneScreen from "../screens/Root/TabOneScreen";
+import TabTwoScreen from "../screens/Root/TabTwoScreen";
 import {
   AuthenticationParamList,
   RootStackParamList,
