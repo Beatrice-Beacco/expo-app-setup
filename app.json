@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "brief-challenge",
-    "slug": "brief-challenge",
+    "name": "expo-app-setup",
+    "slug": "expo-app-setup",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,9 +15,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
