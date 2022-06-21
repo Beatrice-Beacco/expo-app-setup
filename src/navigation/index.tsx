@@ -1,14 +1,13 @@
-import Navigation from "./Navigation";
-
-import React from "react";
-import { ColorSchemeName } from "react-native";
+import React from 'react';
+import { ColorSchemeName } from 'react-native';
+import Navigation from './Navigation';
 
 type PropTypes = {
   colorScheme: ColorSchemeName;
 };
 
-const index = ({ colorScheme }: PropTypes) => {
-  return <Navigation colorScheme={colorScheme} />;
-};
+const index = ({ colorScheme }: PropTypes) => (
+  <Navigation colorScheme={colorScheme} />
+);
 
 export default index;

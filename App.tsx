@@ -1,12 +1,13 @@
-import { StatusBar } from "expo-status-bar";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import React from 'react';
+import { StatusBar } from 'expo-status-bar';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import useCachedResources from "./src/hooks/useCachedResources";
-import useColorScheme from "./src/hooks/useColorScheme";
-import Navigation from "./src/navigation";
+import { MODE } from 'react-native-dotenv';
+import useCachedResources from './src/hooks/useCachedResources';
+import useColorScheme from './src/hooks/useColorScheme';
+import Navigation from './src/navigation';
 
-import { MODE } from "react-native-dotenv";
-import { logAppBuildMessages } from "./src/utils/logger";
+import { logAppBuildMessages } from './src/utils/logger';
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
@@ -16,12 +17,11 @@ export default function App() {
 
   if (!isLoadingComplete) {
     return null;
-  } else {
-    return (
-      <SafeAreaProvider>
-        <Navigation colorScheme={colorScheme} />
-        <StatusBar />
-      </SafeAreaProvider>
-    );
   }
+  return (
+    <SafeAreaProvider>
+      <Navigation colorScheme={colorScheme} />
+      <StatusBar />
+    </SafeAreaProvider>
+  );
 }

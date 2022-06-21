@@ -1,8 +1,8 @@
-import React from "react";
-import { View } from "react-native";
+import React from 'react';
+import { View } from 'react-native';
 
-const SignUpPage = (): JSX.Element => {
-  return <View></View>;
-};
+function SignUpPage(): JSX.Element {
+  return <View />;
+}
 
 export default SignUpPage;

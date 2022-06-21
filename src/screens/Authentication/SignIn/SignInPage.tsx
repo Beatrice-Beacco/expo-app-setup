@@ -1,8 +1,8 @@
-import React from "react";
-import { View } from "react-native";
+import React from 'react';
+import { View } from 'react-native';
 
-const SignInPage = (): JSX.Element => {
-  return <View></View>;
-};
+function SignInPage(): JSX.Element {
+  return <View />;
+}
 
 export default SignInPage;
